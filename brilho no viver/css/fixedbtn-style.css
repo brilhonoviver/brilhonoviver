@@ -1,0 +1,77 @@
+html, body{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Desativa a rolagem lateral */
+    width: 100%;
+}
+
+.fixed-btns
+{
+
+    position: fixed;
+    bottom: 6rem;
+    right: 3rem;
+    width: 3rem;
+    height: auto;
+    z-index: 9999; /* Aumente para sobrepor elementos */
+    pointer-events: auto; /* Permitir interações com o botão */
+
+}
+
+.topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Seta\ Icon\ Blue.jpeg);
+    width: 3rem;
+    height: 3rem;
+    background-size: cover;
+    text-decoration: none;
+    border-radius: 10px 0px 0px 0px;
+
+}
+
+
+.contato-zap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/zap-btn.png);
+    width: 3rem;
+    height: 3rem;
+    background-size: cover;
+    text-decoration: none;
+    border-radius: 0px 0px 0px 10px;
+
+}
+
+@media (max-width: 759px)
+{
+
+    .fixed-btns
+    {
+
+        right: 0rem;
+
+    }
+
+}
+
+@media (min-width: 760px)
+{
+
+    .topo {
+        
+        border-radius: 10px;
+        margin-bottom: .5rem;
+    
+    }
+    
+    
+    .contato-zap {
+        
+        border-radius: 10px;
+    
+    }
+}

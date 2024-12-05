@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&display=swap');
+
+/* links */
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover{
+  color: rgb(189, 189, 189);
+}
+
+/* corpo do cabeçalho */
+
+header
+{
+
+  height: 50dvh;
+  background-color: #000000;
+  background-image: url(../img/fundo-header.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+header * {
+  position: relative;
+  z-index: 2;
+}
+
+.menu
+{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans Georgian";
+  height: 15dvh;
+  
+}
+
+/* lista de links */
+
+.nav-list{
+  list-style: none;
+  display: flex;
+
+}
+
+.nav-list > li{
+  letter-spacing: 3px;
+
+}
+
+.link-meio
+{
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+#logo
+{
+
+  height: 60%;
+
+}
+
+
+@media (min-width: 760px)
+{
+
+  .menu
+  {
+  
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+  }
+
+}
+
+@media (max-width: 759px)
+{
+
+
+  #logo
+  {
+
+    height: 75%;
+
+  }
+
+  .menu
+  {
+  
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+  }
+
+
+
+}
+
+.nav-list 
+{
+
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav-list > ul
+{
+
+  text-align: center;
+
+}
+
